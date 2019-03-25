@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex布局</title>
+	<style type="text/css">
+		.container1{
+			display: flex;
+		}
+		.container2{
+			display: flex;
+			flex-direction: row-reverse;
+		}
+		.container3{
+			display: flex;
+			flex-direction: column;
+		}
+		.container4{
+			display: flex;
+			flex-direction: column-reverse;
+		}
+		.container5{
+			height: 500px;
+			background: #ccc;
+			display: flex;
+			justify-content: space-between;
+		}
+		.container6{
+			margin-top: 10px;
+			height: 500px;
+			background: #ccc;
+			display: flex;
+			justify-content: space-around;
+		}
+		.flex{
+			width: 300px;
+			height: 100px;
+			background-color: red;
+			margin: 5px;
+			color: yellow;
+		}
+		.flex1{
+			width: 300px;
+			height: 100px;
+			background-color: yellow;
+			margin: 5px;
+			color: #fff;
+		}
+		.flex2{
+			width: 300px;
+			height: 100px;
+			background-color: red;
+			color: #fff;
+		}
+		.flex3{
+			width: 300px;
+			background-color: yellow;
+			color: #fff;
+			align-items: stretch;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>flex-direction: row;</h1>
+	<div class="container1">
+		<div class="flex">
+		    <p>flex item1</p>
+			<p>flex-direction: row;</p>
+		</div>
+		<div class="flex">
+			<p>flex item2</p>
+			<p>flex-direction: row;</p>
+		</div>
+		<div class="flex">
+			<p>flex item3</p>
+			<p>flex-direction: row;</p>
+		</div>
+		<div class="flex">
+			<p>flex item4</p>
+			<p>flex-direction: row;</p>
+		</div>
+	</div>
+    <h1>flex-direction: row-reverse;</h1>
+	<div class="container2">
+		<div class="flex">
+			<p>flex item1</p>
+			<p>flex-direction: row-reverse;</p>
+		</div>
+		<div class="flex">
+			<p>flex item2</p>
+			<p>flex-direction: row-reverse;</p>
+		</div>
+		<div class="flex">
+			<p>flex item3</p>
+			<p>flex-direction: row-reverse;</p>
+		</div>
+		<div class="flex">
+			<p>flex item4</p>
+			<p>flex-direction: row-reverse;</p>
+		</div>
+	</div>
+	<h1>flex-direction: column;</h1>
+	<div class="container3">
+		<div class="flex">
+			<p>flex item1</p>
+			<p>flex-direction: column;</p>
+		</div>
+		<div class="flex">
+			<p>flex item2</p>
+			<p>flex-direction: column;</p>
+		</div>
+		<div class="flex">
+			<p>flex item3</p>
+			<p>flex-direction: column;</p><p>
+		</div>
+		<div class="flex">
+			<p>flex item4</p>
+			<p>flex-direction: column;</p>
+		</div>
+	</div>
+	<h1>flex-direction: column-reverse;</h1>
+	<div class="container4">
+		<div class="flex1">
+			<p>flex item1</p>
+			<p>flex-direction: column-reverse;</p>
+		</div>
+		<div class="flex1">
+			<p>flex item2</p>
+			<p>flex-direction: column-reverse;</p>
+		</div>
+		<div class="flex1">
+			<p>flex item3</p>
+			<p>flex-direction: column-reverse;</p>
+		</div>
+		<div class="flex1">
+			<p>flex item4</p>
+			<p>flex-direction: column-reverse;</p>
+		</div>
+	</div>
+
+	<div class="container5">
+		<div class="flex2">
+			<p>flex item1</p>
+			<p>justify-content:space-between;</p>
+		</div>
+		<div class="flex2">
+			<p>flex item2</p>
+			<p>justify-content:space-between;</p>
+		</div>
+		<div class="flex2">
+			<p>flex item3</p>
+			<p>justify-content:space-between;</p>
+		</div>
+		<div class="flex2">
+			<p>flex item4</p>
+			<p>justify-content:space-between;</p>
+		</div>
+	</div>
+		<div class="container6">
+		<div class="flex3">
+			<p>flex item1</p>
+			<p>justify-content:space-around;</p>
+			<p>align-item:stretch</p>
+		</div>
+		<div class="flex3">
+			<p>flex item2</p>
+			<p>justify-content:space-around;</p>
+			<p>align-item:stretch</p>
+		</div>
+		<div class="flex3">
+			<p>flex item3</p>
+			<p>justify-content:space-around;</p>
+			<p>align-item:stretch</p>
+		</div>
+		<div class="flex3">
+			<p>flex item4</p>
+			<p>justify-content:space-around;</p>
+			<p>align-item:stretch</p>
+		</div>
+	</div>
+
+</body>
+</html>

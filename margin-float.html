@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>基于margin、float的布局</title>
+	<style type="text/css">
+		.wrapper{
+			width: 920px;
+			margin:0 auto;
+			background: red;
+			margin-top: 100px;
+		}
+		.wrapper .content{
+			overflow: hidden;
+		}
+		.content .primary{
+			/*width: 650px;*/
+			float: right;
+			background: green;
+			/*padding-right: 20px;*/
+		}
+		.content .secondary{
+			width: 230px;
+			float: left;
+			background: yellow;
+		}
+		.content .primary .primary{
+			width: 400px;
+			float: left;
+			display: inline;
+		}
+		.content .primary .secondary{
+			width: 230px;
+			float: right;
+			display: inline;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">页眉 基于margin、float的两列居中布局</div>
+		<div class="content">
+			<div class="primary">右边</div>
+			<div class="secondary">左边</div>
+		</div>
+		<div class="footer">页脚</div>
+	</div>
+
+	<div class="wrapper">
+		<div class="header">页眉 基于margin、float的三列居中布局</div>
+		<div class="content">
+			<div class="primary">
+				<div class="primary">左边</div>
+				<div class="secondary">右边</div>
+			</div>
+			<div class="secondary">左边</div>
+		</div>
+		<div class="footer">页脚</div>
+	</div>
+</body>
+</html>
