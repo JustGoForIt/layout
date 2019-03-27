@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>inline-block布局方案</title>
+	<style type="text/css">
+		.container{
+			width: 800px;
+			height: 200px;
+			background: yellow;
+			/*font-size: 0;*/
+		}
+		.left{
+			width: 200px;
+			height: 200px;
+			background: red;
+			display: inline-block;
+			font-size: 20px;
+		}
+		.right{
+			width: 600px;
+			height: 200px;
+			background: blue;
+			display: inline-block;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="left">
+			我是左边
+		</div><div class="right">
+			我是右边
+		</div>
+	</div>
+</body>
+</html>
